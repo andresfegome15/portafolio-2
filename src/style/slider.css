@@ -1,0 +1,25 @@
+.slider-container{
+    margin: 0 auto;
+    overflow-x: hidden;
+    height: 20.4rem;
+    max-width: 40rem;
+}
+
+.slider{
+    display: flex;
+    cursor: grab;
+    gap: 2rem;
+    padding-left: 1rem;
+    
+}
+.item{
+    height: 20rem;
+    min-width: 35rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .9);
+}
+
+.item img{
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
