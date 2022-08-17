@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import axios, { Axios } from "axios";
-import { UserCreate } from "../store/slices/createUserSlice";
+import axios from "axios";
 import { useForm } from "react-hook-form";
-// import { useDispatch } from "react-redux";
 
 const Contacto = () => {
   const { register, handleSubmit } = useForm();
@@ -11,7 +9,7 @@ const Contacto = () => {
   useEffect(() => {
     getSugerencia();
     console.log(sugerencias);
-  }, []);
+  }, [sugerencias]);
 
   const getSugerencia = () => {
     axios

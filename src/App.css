@@ -38,8 +38,7 @@ header > nav > ul{
   list-style: none;
   margin: 0;
   padding: 0;
-  display:flex ;
-  justify-content: end;
+  display:flex;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
   backdrop-filter:blur(2px) ;
   gap: 2rem;
