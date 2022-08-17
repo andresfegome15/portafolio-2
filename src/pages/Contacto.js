@@ -111,12 +111,18 @@ const Contacto = () => {
           </button>
         </form>
         <div className='container-all-items'>
-          {sugerencias.map(sugerencia => (
-            <div key={sugerencia.id} className='container-sugerencia'>
-              <h6>{String(sugerencia.createdAt).slice(0, 10)}</h6>
-              <p className='sugerencia'>{sugerencia.sugerencia}</p>
-            </div>
-          ))}
+          {sugerencias.length <= 0 ? (
+            <h1 style={{ color: "#ccc", padding: "auto" }}>
+              No hay Sugerencias
+            </h1>
+          ) : (
+            sugerencias.map(sugerencia => (
+              <div key={sugerencia.id} className='container-sugerencia'>
+                <h6>{String(sugerencia.createdAt).slice(0, 10)}</h6>
+                <p className='sugerencia'>{sugerencia.sugerencia}</p>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </div>
