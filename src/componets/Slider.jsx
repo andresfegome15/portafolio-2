@@ -11,7 +11,7 @@ const Slider = () => {
             
           
         <motion.div className='slider-container'>
-            <motion.div className='slider' drag='x' dragConstraints={{right:0, left:-2328}}>
+            <motion.div className='slider' drag='x' dragConstraints={{right:0, left: -2328}}>
                {
                 Wows.map(wow =>(
                     <motion.div key={wow} className='item'>

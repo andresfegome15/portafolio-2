@@ -1,4 +1,5 @@
 import "./App.css";
+import "./style/screen-style.css";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { Home, Perfil, Contacto } from "./pages";
 import Navbar from "./componets/Navbar";
