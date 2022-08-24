@@ -2,9 +2,11 @@ import React from "react";
 import andres from "../img/andres.png";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 
 const Navbar = () => {
   const { register, handleSubmit } = useForm();
+  const [active, setactive] = useState("");
 
   const submit = data => {
     axios
@@ -17,11 +19,22 @@ const Navbar = () => {
       .catch(error => console.log(error));
   };
 
+  const thema = () => {
+    setactive(!active);
+    document.body.classList.toggle("darck");
+    document.querySelector("ul.ul-nav").classList.toggle("darck");
+    document.querySelector("div.welcome").classList.toggle("darck");
+    document.querySelector("div.perfil").classList.toggle("darck");
+    document.querySelector("div.info").classList.toggle("darck");
+    document.querySelector("div.container-footer").classList.toggle("darck");
+    document.querySelector("div.social-red").classList.toggle("darck");
+  };
+
   return (
     <>
       <input type='checkbox' name='' id='check-nav-bar' />
       <label htmlFor='check-nav-bar' className='menu-hamburguesa'>
-        <i class='fa-solid fa-bars'></i>
+        <i className='fa-solid fa-bars'></i>
       </label>
       <header>
         <div className='container-perfil-menu'>
@@ -35,7 +48,7 @@ const Navbar = () => {
         </div>
 
         <nav>
-          <ul>
+          <ul className='ul-nav'>
             <li className='nav-items'>
               <a href='/'>Home</a>
             </li>
@@ -48,6 +61,18 @@ const Navbar = () => {
             <li className='nav-items'>
               <a href='/#/contacto'>Contact</a>
             </li>
+            <button
+              className={"switch " + active}
+              id='switch'
+              onClick={() => thema()}
+            >
+              <span>
+                <i className='fa-solid fa-sun'></i>
+              </span>
+              <span>
+                <i className='fa-solid fa-moon'></i>
+              </span>
+            </button>
           </ul>
           <form className='form-nav' action='' onSubmit={handleSubmit(submit)}>
             <div className='form-group'>

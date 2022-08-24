@@ -1,0 +1,144 @@
+/* contactos */
+
+.contactos{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+   }
+   .contactos>.container-contacto{
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-bottom:2rem;
+   }
+   .container-contacto > .container-contactar{
+    background-color: white;
+    margin: 1rem;
+    border-radius: 40px 40px 0px 40px;
+    color: black;
+    font-weight: bold; 
+   }
+  
+   .form{
+    padding:1rem .5rem .5rem .5rem;
+    margin: 1rem;
+    border-radius: 20px;
+    background-color: white;
+   }
+   .form-group{
+    position: relative;
+    color: #5757577e;
+    margin-bottom: 20px;
+  
+   }
+   .form-input{
+    width: 100%;
+    height: 25px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #706c6c;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: 700;
+    border-bottom: 1px solid #5757577e;
+   }
+   .form-label{
+    color: #5757577e;
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    transform: translateY(10px);
+    transition: all .5s, color .3s;
+   }
+   .form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: top left;
+    color: #04e950dc;
+    font-size: 1rem;
+    font-weight: 900;
+   }
+   .form > button{
+    border-radius: 30px;
+    border: none;
+    margin-left: 60%;
+    padding: 5px;
+    background-color: #04e950dc;
+    color: white;
+   }
+  
+   .contactos > .container-all-sugerencia{
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    display: grid;
+    justify-content: right;
+    grid-template-columns: 1fr 1fr;
+   }
+  
+   .contactos > .container-all-sugerencia>form{
+    width: 100%;
+   }
+   .contactos > .container-all-sugerencia>form>.form-input{
+    min-width: 90%;
+    height: 30vh;
+    margin: 1rem;
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 5px;
+    margin-bottom: .4rem;
+   }
+   #txtsugerencia ~ label{
+    width: 0;
+    height: 0;
+    overflow:hidden;
+    display: none;
+    margin-left: 1rem;
+    transition: all 4s;
+   }
+   
+   #txtsugerencia.form-input:not(:placeholder-shown) ~ label{
+    color: green;
+   }
+   #txtsugerencia:focus ~ label{
+    transition: all 4s;
+    color: #dd1590f5;
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+   }
+  
+   .btnsugerencia{
+    border: none;
+    width: 90%;
+    margin: 1rem;
+  height: 25px;
+  border-radius: 5px;
+  color: white;
+  background-color:#04e950dc ;
+  transition: all 2s;
+   }
+   
+   .container-all-items{
+    width: 100%;
+    max-height: 80vh;
+    scroll-snap-type: proximity;
+    gap: 0.4rem;
+    display: grid;
+    overflow-y: scroll;
+    transition: all 3s;
+   }
+  
+   .contactos> .container-all-sugerencia > .container-all-items > .container-sugerencia{
+    max-width: 60%;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: white;
+    padding: .4rem;
+    border: solid 1px;
+    transition: all 4s;
+   }

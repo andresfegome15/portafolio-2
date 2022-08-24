@@ -1,0 +1,40 @@
+.section-main{
+    width: 99%;
+    height: auto;
+    margin-top: 30px;
+    color:white;
+    justify-items: center;
+  }
+  .welcome{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/background\ andres.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+  }
+  .welcome.darck{
+    background-image: url('../img/andres\ darck.gif');
+    color: #38b6ff;
+  }
+  .full-stack{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .cv{
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    background-color: #ff66c4;
+    color: #545454;
+    margin: 1rem;
+  }
+  .mas{
+    background-color: #38b6ff;
+  }
+  

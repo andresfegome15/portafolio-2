@@ -1,5 +1,6 @@
 import React from "react";
-
+import "../style/natLat.css";
+import "../style/nav.css";
 const Navlat = () => {
   return (
     <div className='social-red'>

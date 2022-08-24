@@ -8,7 +8,6 @@ const Contacto = () => {
 
   useEffect(() => {
     getSugerencia();
-    console.log(sugerencias);
   }, [sugerencias]);
 
   const getSugerencia = () => {
@@ -41,7 +40,7 @@ const Contacto = () => {
     <div className='contactos'>
       <div className='container-contacto'>
         <div className='container-contactar'>
-          <h3 style={{ padding: "1rem" }}>¿Trabajemos juntos?</h3>
+          <h3 style={{ padding: "1rem" }}>¿Trabajamos juntos?</h3>
           <div style={{ display: "flex", gap: "1rem", padding: "1rem" }}>
             <i className='fa-brands fa-whatsapp'></i>
             <a href='https://www.whatsapp.com/?lang=es'> 3042827183</a>

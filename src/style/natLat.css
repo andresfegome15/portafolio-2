@@ -1,0 +1,49 @@
+
+.social-red{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 30px);
+    margin-top: 30px;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 1.5%;
+    transition: all 1s;
+  }
+   .social-red>ul{
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+    backdrop-filter:blur(2px) ;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .social-red:hover {
+    transition: 1s;
+    width: 5%;
+   }
+  
+   .social-red:hover > ul >.red-items{
+    display: block;
+    transition: all 3s;
+   }
+   .social-red:hover > ul >.red-items-none  {
+    display: none;
+    transition: all 3s;
+   }
+   .social-red>ul>.red-items{
+    display: none;
+   }
+  
+   .social-red>ul>li>a{
+    width: 50px;
+    height: 50px;
+   }
