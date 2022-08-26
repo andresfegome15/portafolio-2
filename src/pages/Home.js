@@ -8,7 +8,7 @@ const Home = () => {
         <div className='welcome'>
           <div className='full-stack'>
             <h4>Welcome</h4>
-            <h1>! Soy programador Full stack ¡</h1>
+            <h1>!Soy programador Full stack¡</h1>
             <br />
             <p>
               Bienvenido, mi nombre es Andres González <br />

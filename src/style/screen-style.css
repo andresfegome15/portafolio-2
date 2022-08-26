@@ -25,7 +25,11 @@
       left: 5px;
       }
 
-    
+    /* header{
+      background-color: yellow;
+      width: 500px;
+      height: ;
+    } */
     header> .header{
       display: grid;
       position: fixed;
@@ -44,13 +48,15 @@
             transform: rotate(90deg);
       }
         i{font-size: 30px;}
-
+      header > .header > .container-perfil-menu{
+        width: 55%;
+      }
       header > .header > .container-perfil-menu > img{
         display: block;
         width: 50%;
         height: 70%;
         margin: 10% 0 0 14%;
-        background-color: greenyellow;
+        background-color: yellowgreen;
         display: inline;
         border-radius: 50%;
         background-color: 45;
@@ -72,7 +78,7 @@
       header > .header > nav > ul{
         height: 30px;
         margin-bottom: 10%;
-        width: 99%;
+        width: 55%;
         display: flex;
         gap: 1.5rem;
         justify-content: space-between;
@@ -94,6 +100,7 @@
       }
 
       .form-nav{
+        width: 47%;
         margin: 4%;
         padding: 2%;
         background-color: white;
@@ -106,7 +113,7 @@
       /* WELCOME */
        .section-main{
         margin:0px;
-        top: -30px;
+        top: 0px;
         padding: 0;
         position: relative;
         padding-bottom: 3%;
