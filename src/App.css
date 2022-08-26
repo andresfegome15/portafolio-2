@@ -9,13 +9,11 @@ body{
   background-color: #737373;
 }
 
-
-  .menu-hamburguesa,.container-perfil-menu, #check-nav-bar, .form-nav{
-    /* display: none; */
+   .menu-hamburguesa,.container-perfil-menu, #check-nav-bar, .form-nav{
+    display: none;
   }
 
-
-
+ 
 
 /* DARCK MODE */
 body.darck{

@@ -11,22 +11,22 @@
     .social-red{
         display: none;
     }
-    label, header > .container-perfil-menu, header > nav .form-nav{
+   header > .header > .container-perfil-menu, header > .header > nav .form-nav{
       display: block;
     }
  
     
-    .menu-hamburguesa{
+    header > .menu-hamburguesa{
+      display: block;
       z-index: 10;
       color: #2196f3;
       position: fixed;
-      visibility: visible;
       top:5px;
       left: 5px;
       }
 
     
-    header{
+    header> .header{
       display: grid;
       position: fixed;
       height: 100vh;
@@ -36,7 +36,7 @@
       grid-template-rows: 1fr 1fr 1fr;
       box-shadow: 0 0 0 .6px black;
     }
-    input#check-nav-bar:checked ~ header{
+    input#check-nav-bar:checked ~ .header{
         left: 1px;
     }
   
@@ -45,7 +45,7 @@
       }
         i{font-size: 30px;}
 
-      header > .container-perfil-menu > img{
+      header > .header > .container-perfil-menu > img{
         display: block;
         width: 50%;
         height: 70%;
@@ -69,21 +69,24 @@
         left: -6%;
       }
 
-      header > nav > ul{
+      header > .header > nav > ul{
         height: 30px;
         margin-bottom: 10%;
         width: 99%;
-        flex-direction: row;
+        display: flex;
         gap: 1.5rem;
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 20px;
       }
       
-      header > nav > ul > .switch{
+      .header > nav > ul > .switch{
         position: relative;
         top: -250px;
-        left: 10px;
+        left: 0px;
       }
 
-      header > nav > ul > .switch::after{
+      .header > nav > ul > .switch::after{
       width: 35px;
       height: 35px;
       top: -2px;

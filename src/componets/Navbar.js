@@ -33,91 +33,97 @@ const Navbar = () => {
 
   return (
     <>
-      <input type='checkbox' name='' id='check-nav-bar' />
-      <label htmlFor='check-nav-bar' className='menu-hamburguesa'>
-        <i className='fa-solid fa-bars'></i>
-      </label>
       <header>
-        <div className='container-perfil-menu'>
-          <a href='https://github.com/andresfegome15'>
-            <i className='fa-brands fa-github'></i>
-          </a>
-          <img src={andres} alt='' />
-          <a href='https://www.linkedin.com/in/andr%C3%A9s-felipe-401a671ab/'>
-            <i className='fa-brands fa-linkedin'></i>
-          </a>
-        </div>
+        <input type='checkbox' name='' id='check-nav-bar' />
+        <label htmlFor='check-nav-bar' className='menu-hamburguesa'>
+          <i className='fa-solid fa-bars'></i>
+        </label>
+        <div className='header'>
+          <div className='container-perfil-menu'>
+            <a href='https://github.com/andresfegome15'>
+              <i className='fa-brands fa-github'></i>
+            </a>
+            <img src={andres} alt='' />
+            <a href='https://www.linkedin.com/in/andr%C3%A9s-felipe-401a671ab/'>
+              <i className='fa-brands fa-linkedin'></i>
+            </a>
+          </div>
 
-        <nav>
-          <ul className='ul-nav'>
-            <li className='nav-items'>
-              <a href='/'>Home</a>
-            </li>
-            <li className='nav-items'>
-              <a href='/#/perfil'>About</a>
-            </li>
-            <li className='nav-items'>
-              <a href='/#/producto'>Productos</a>
-            </li>
-            <li className='nav-items'>
-              <a href='/#/contacto'>Contact</a>
-            </li>
-            <button
-              className={"switch " + active}
-              id='switch'
-              onClick={() => thema()}
+          <nav>
+            <ul className='ul-nav'>
+              <li className='nav-items'>
+                <a href='/'>Home</a>
+              </li>
+              <li className='nav-items'>
+                <a href='/#/perfil'>About</a>
+              </li>
+              <li className='nav-items'>
+                <a href='/#/producto'>Productos</a>
+              </li>
+              <li className='nav-items'>
+                <a href='/#/contacto'>Contact</a>
+              </li>
+              <button
+                className={"switch " + active}
+                id='switch'
+                onClick={() => thema()}
+              >
+                <span>
+                  <i className='fa-solid fa-sun'></i>
+                </span>
+                <span>
+                  <i className='fa-solid fa-moon'></i>
+                </span>
+              </button>
+            </ul>
+            <form
+              className='form-nav'
+              action=''
+              onSubmit={handleSubmit(submit)}
             >
-              <span>
-                <i className='fa-solid fa-sun'></i>
-              </span>
-              <span>
-                <i className='fa-solid fa-moon'></i>
-              </span>
-            </button>
-          </ul>
-          <form className='form-nav' action='' onSubmit={handleSubmit(submit)}>
-            <div className='form-group'>
-              <input
-                className='form-input'
-                id='txtname'
-                type='text'
-                required
-                placeholder=' '
-                {...register("name")}
-              />
-              <label htmlFor='txtname' className='form-label'>
-                Name:
-              </label>
-            </div>
-            <div className='form-group'>
-              <input
-                className='form-input'
-                id='txtemail'
-                type='text'
-                required
-                placeholder=' '
-                {...register("email")}
-              />
-              <label htmlFor='txtemail' className='form-label'>
-                Email:
-              </label>
-            </div>
-            <div className='form-group'>
-              <input
-                className='form-input'
-                id='txtmessage'
-                type=''
-                required
-                placeholder=' '
-                {...register("mensaje")}
-              />
-              <label htmlFor='txtmessage' className='form-label'>
-                Mensaje:
-              </label>
-            </div>
-            <button type='submit'>Contactar</button>
-          </form>
-        </nav>
+              <div className='form-group'>
+                <input
+                  className='form-input'
+                  id='txtname'
+                  type='text'
+                  required
+                  placeholder=' '
+                  {...register("name")}
+                />
+                <label htmlFor='txtname' className='form-label'>
+                  Name:
+                </label>
+              </div>
+              <div className='form-group'>
+                <input
+                  className='form-input'
+                  id='txtemail'
+                  type='text'
+                  required
+                  placeholder=' '
+                  {...register("email")}
+                />
+                <label htmlFor='txtemail' className='form-label'>
+                  Email:
+                </label>
+              </div>
+              <div className='form-group'>
+                <input
+                  className='form-input'
+                  id='txtmessage'
+                  type=''
+                  required
+                  placeholder=' '
+                  {...register("mensaje")}
+                />
+                <label htmlFor='txtmessage' className='form-label'>
+                  Mensaje:
+                </label>
+              </div>
+              <button type='submit'>Contactar</button>
+            </form>
+          </nav>
+        </div>
       </header>
     </>
   );
