@@ -101,7 +101,7 @@
    }
    
    #txtsugerencia.form-input:not(:placeholder-shown) ~ label{
-    color: green;
+    display: none;
    }
    #txtsugerencia:focus ~ label{
     transition: all 4s;

@@ -1,3 +1,4 @@
+import "./style/nav.css";
 import "./style/screen-style.css";
 import "./App.css";
 import "./style/Home.css";

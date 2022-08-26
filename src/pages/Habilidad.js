@@ -15,9 +15,9 @@ import postgress from "../img/postgres.jpg";
 const Habilidad = () => {
   return (
     <div className='habilidades'>
-      <h3>Habilidades</h3>
       <input type='checkbox' name='' id='check-tecnology' />
       <label htmlFor='check-tecnology'>
+        <h3>Habilidades</h3>
         <i className='fa-solid-price fa-solid fa-angle-down'></i>
       </label>
       <div className='fullstack'>

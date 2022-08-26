@@ -41,18 +41,18 @@ const Slider = () => {
             </ul>
           </div>
           <div className='otras'>
-      <div className='container-otras'>
-        <h4>Azure</h4>
-        <div className='container-por'>
-          <div
-            style={{
-              backgroundColor: "#38b6ff",
-              width: "36%",
-              height: "10px",
-            }}
-          ></div>
-        </div>
-      </div>
+          <div className='container-otras'>
+            <h4>Azure</h4>
+            <div className='container-por'>
+              <div
+                style={{
+                  backgroundColor: "#38b6ff",
+                  width: "36%",
+                  height: "10px",
+                }}
+              ></div>
+            </div>
+          </div>
       <div className='container-otras'>
         <h4>Heroku</h4>
         <div className='container-por'>

@@ -26,6 +26,7 @@ const Navbar = () => {
     document.querySelector("div.welcome").classList.toggle("darck");
     document.querySelector("div.perfil").classList.toggle("darck");
     document.querySelector("div.info").classList.toggle("darck");
+    document.querySelector("div.contactos").classList.toggle("darck");
     document.querySelector("div.container-footer").classList.toggle("darck");
     document.querySelector("div.social-red").classList.toggle("darck");
   };

@@ -8,15 +8,11 @@
 body{
   background-color: #737373;
 }
-  
-.menu-hamburguesa, .container-perfil-menu, #check-nav-bar, .form-nav{
-  display: none;
-}
-
-/* NAV */
 
 
-
+  .menu-hamburguesa,.container-perfil-menu, #check-nav-bar, .form-nav{
+    /* display: none; */
+  }
 
 
 
@@ -86,12 +82,9 @@ body.darck{
   margin-bottom: 1rem;
 }
 
-/* CONTACTOS
-.contactos.darck{
-  background-color: white;
-}
+/* CONTACTOS*/
 
-.contactos.darck > .container-contacto > .container-contactar{
+.contactos.darck > .container-contacto > .form > button, .contactos.darck >.container-all-sugerencia>form>button{
   background-color: black;
   color: white;
 } */
