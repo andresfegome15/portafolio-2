@@ -48,7 +48,6 @@ const Navbar = () => {
               <i className='fa-brands fa-linkedin'></i>
             </a>
           </div>
-
           <nav>
             <ul className='ul-nav'>
               <li className='nav-items'>
