@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const Ejercicios = () => {
   const fib = [0, 1, 2];
