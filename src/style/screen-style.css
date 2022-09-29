@@ -11,7 +11,7 @@
     .social-red{
         display: none;
     }
-   header > .header > .container-perfil-menu, header > .header > nav .form-nav{
+    .menu-hamburguesa,.container-perfil-menu, .menu-hamburguesa, .form-nav{
       display: block;
     }
  
@@ -23,6 +23,8 @@
       position: fixed;
       top:5px;
       left: 5px;
+      width: 30px;
+      height: 30px;
       }
 
     /* header{

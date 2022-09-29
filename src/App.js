@@ -7,7 +7,7 @@ import "./style/contacto.css";
 import "./style/screen-style.css";
 
 import { HashRouter, Route, Routes } from "react-router-dom";
-import { Home, Perfil, Contacto } from "./pages";
+import { Home, Perfil, Contacto, Me, Ejercicios } from "./pages";
 import Navbar from "./componets/Navbar";
 import Slider from "./componets/Slider";
 import Navlat from "./componets/Navlat";
@@ -23,6 +23,8 @@ function App() {
           <Route path='/perfil' element={<Perfil />} />
           <Route path='/contacto' element={<Contacto />} />
           <Route path='/producto' element={<Slider />} />
+          <Route path='/me' element={<Me />} />
+          <Route path='/ejercicios' element={<Ejercicios />} />
         </Routes>
         <Navlat></Navlat>
         <Footer></Footer>
